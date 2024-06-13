@@ -16,10 +16,14 @@
 
 <body>
     <div class="container-fluid">
-        <div class="alert alert-danger alert-dismissable">
-            <button type="button" class="btn-close" data-bs-dimiss="alert"></button>
-            <strong>IMPORTANT!</strong><a href="https://www.youtube.com/watch?v=nwuW98yLsgY" class="alert-link">CLICK ME NOW!!</a>
-        </div>
+        <!--Alert-->
+        <div class="alert alert-danger alert-dismissible show" role="alert">
+            <strong>IMPORTANT</strong>
+            <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">CLICK ME NOW!!!11!!1!11111!1</a>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
         <!--navbar-->
         <div class="row">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -32,12 +36,11 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
+                            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                            <li><a class="nav-link scrollto" href="#about">About</a></li>
+                            <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                            <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+                            <li><a class="nav-link scrollto" href="#team">Team</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
@@ -99,37 +102,83 @@
             </button>
         </div>
     </div>
-    <div class="container-fluid">
         <!--green icons and descriptions-->
-        <div class="container">
-            <div class="row">
-              <div class="col-lg-4 col-md-6">
-                <div class="icon-box">
-                  <div class="icon"><i class="bi bi-laptop"></i></div>
-                  <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                  <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, quaerat.</p>
+        <section id="featured-services" class="featured-services section-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bi bi-laptop"></i></div>
+                            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+                                quaerat.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bi bi-briefcase"></i></div>
+                            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+                            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, ea.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+                            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, sit?
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="icon-box">
-                  <div class="icon"><i class="bi bi-briefcase"></i></div>
-                  <h4 class="title"><a href="">Dolor Sitema</a></h4>
-                  <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, ea.</p>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="icon-box">
-                  <div class="icon"><i class="bi bi-calendar4-week"></i></div>
-                  <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-                  <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, sit?</p>
-                </div>
-              </div>
             </div>
-          </div>
-    </div>
-    <div class="container-fluid">
+        </section>
         <!--about us-->
-    </div>
+        <section id="about" class="about">
+            <div class="container bg-succes">
+                <div class="section-title">
+                    <h2>About Us</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
+                        sint
+                        consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                        Quia
+                        fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 order-1 order-lg-2">
+                        <img src="/img/about.jpg" class="img-fluid" alt="about img">
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+                        <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                        <p class="fst-italic">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore
+                            magna aliqua.
+                        </p>
+                        <ul>
+                            <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.
+                            </li>
+                            <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate
+                                velit.</li>
+                            <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro
+                                dolore eu
+                                fugiat nulla pariatur.</li>
+                        </ul>
+                        <p>
+                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit
+                            in voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in
+                            culpa qui officia deserunt mollit anim id est laborum
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     <div class="container-fluid">
         <!--cards 01-06 -->
     </div>
